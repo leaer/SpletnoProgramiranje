@@ -6,20 +6,41 @@ h1, h2, h3, h4{
 	line-height: 1.1em;
 	margin: 0 0 .5em 0;
 }
-h1{ font-size: 1.7em; }
-h2{ font-size: 1.5em; }
+h1{
+    font-size: 2.0em;
+}
+h2{
+    font-size: 1.5em; }
 a{
-	color: black;
+	color: #2a103c;
 	text-decoration: none;
 }
 	a:hover,
-	a:active{ text-decoration: underline; }
+	a:active{
+	text-decoration: underline;
+	}
 
 body{
-    font-family: arial; font-size: 80%; line-height: 1.2em; width: 100%; margin: 0; background: #eee;
+    font-family: arial;
+    font-size: 80%;
+    line-height: 1.2em;
+    width: 100%;
+    margin: 0;
+    background: #eee;
 }
 
-#page{ margin: 20px; }
+#page{
+margin: 20px;
+}
+
+.container {
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    background: #2a103c;
+    margin: 0 auto;
+    margin-top: 150px;
+}
 
 #logo{
 	width: 35%;
@@ -28,35 +49,61 @@ body{
 	display: inline-block;
 }
 
-
-#gumbi{
+#navBar{
 	width: 60%;
 	display: inline-block;
 	text-align: right;
 	float: right;
 }
-	#gumbi ul{}
-		#gumbi ul li{
-			display: inline-block;
-			height: 62px;
-		}
-			#gumbi ul li a{
-				padding: 20px;
-				background: #2a103c;
-				color: white;
-			}
-			#gumbi ul li a:hover{
-				background-color: #2a103c;
-				box-shadow: 0px 1px 1px #666;
-			}
-			#gumbi ul li a:active{ background-color: #ff8f00; }
 
-#vsebina{
-	margin: 30px 0;
-	background: white;
-	padding: 20px;
-	clear: both;
+    #navBar ul li{
+        display: inline-block;
+        height: 62px;
+    }
+	#navBar ul li a{
+	    text-decoration: none;
+		padding: 20px;
+		background: #2a103c;
+		font-family:Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+		color: white;
+    }
+	#navBar ul li a:hover{
+		background-color: #695776;
+		box-shadow: 0px 1px 1px #666;
+	}
+	#navBar ul li a:active{
+	    background-color: #2a103c;
+	}
+
+#background {
+     margin: 30px 0;
+     background: white;
+     padding: 20px;
+     clear: both;
+     opacity: 0.5;
+     filter: alpha(opacity=50);
 }
+
+#prijava ul li{
+    display: block;
+    height: 62px;
+}
+	#prijava ul li a{
+	    margin: 30px 0;
+	    text-decoration: none;
+	    text-align: center;
+		padding: 20px;
+		background: #0ea7ee;
+		color: white;
+    }
+	#prijava ul li a:hover{
+		background-color: #86d3f6;
+		box-shadow: 0px 1px 1px #666;
+	}
+	#prijava ul li a:active{
+	    background-color: #0ea7ee;
+	}
+
 #footer{
 	border-bottom: 1px #ccc solid;
 	margin-bottom: 10px;
@@ -68,5 +115,5 @@ body{
 		color: #666;
 	}
 
-#vsebina,
+#background
 ul li a{ box-shadow: 0px 1px 1px #999; }
