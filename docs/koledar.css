@@ -37,9 +37,7 @@ body{
 }
 
 #page{
-
-
-    margin: 20px;
+margin: 20px;
 }
 
 .container {
@@ -51,22 +49,17 @@ body{
     margin-top: 150px;
 }
 
-#wrap{
-    background: url(glava.png);
-    height: 200px;
-    opacity: 0.7;
-    filter: alpha(opacity=70);
-}
-
 #logo{
 	width: 35%;
-	margin-top: 170px;
+	margin-top: 40px;
 	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 	display: inline-block;
 }
 
+
+
 #navBar{
-    margin-top: 170px;
+    margin-top: 50px;
 	width: 60%;
 	display: inline-block;
 	text-align: right;
@@ -102,35 +95,15 @@ body{
 	#navBar ul ul li{
 	    display: block;
 	}
-
+/*
 #background {
-     margin: 40px 0;
+     margin: 30px 0;
      background: white;
      padding: 20px;
      clear: both;
      opacity: 0.5;
      filter: alpha(opacity=50);
-}
-/*
-#prijava ul li{
-    display: block;
-    height: 62px;
-}
-	#prijava ul li a{
-	    margin: 30px 0;
-	    text-decoration: none;
-	    text-align: center;
-		padding: 20px;
-		background: #0ea7ee;
-		color: white;
-    }
-	#prijava ul li a:hover{
-		background-color: #86d3f6;
-		box-shadow: 0px 1px 1px #666;
-	}
-	#prijava ul li a:active{
-	    background-color: #0ea7ee;
-	}
+*/
 
 #calendar {
     margin:100px auto;
@@ -206,7 +179,7 @@ body{
     #calendar #calendar-frame table.temp {
         position:absolute;
     }
-*/
+
 
 
 #footer{
