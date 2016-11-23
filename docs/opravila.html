@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="opravila.css" type="text/css" />
 </head>
 
+
+
 <body>
 	<div id="page">
 
@@ -26,19 +28,17 @@
             </div>
         </div>
 
-                   <div id="navPoOpravilih">
-                    <ul>
-                        <li><a href="opravila.html">Dodaj opravilo</a></li>
-                        <li><a href="pregledOpravil.html">Preglej opravila</a></li>
-                        <li><a href="odstraniOpravilo.html">Odstrani opravilo</a></li>
-                    </ul>
+            <div id="navPoOpravilih">
+                <ul>
+                    <li><a href="opravila.html">Dodaj opravilo</a></li>
+                    <li><a href="pregledOpravil.html">Preglej opravila</a></li>
+                    <li><a href="odstraniOpravilo.html">Odstrani opravilo</a></li>
+                </ul>
             </div>
 
+
         <div class="container">
-
-
-
-            <div id="opravila">
+            <div id="Opravilo">
                 <label>Opravilo:
                     <input id="todo" type="text" />
                     <ul id="show-items"></ul>
@@ -91,7 +91,7 @@
                 </form>
             </div>
 
-            <div id="notes">
+            <div id="Notes">
                 <label>Notes:
                     <input id="notes" type="text" />
                     <ul id="show-items"></ul>
@@ -99,13 +99,22 @@
             </div>
 
             <div id="Add">
-                <button class="button" style="vertical-align:middle"><span>Add to list</span></button>
+                <input type="button" id="btnAdd" value="Add to list" onclick=/>
+                <!--<button class="button" style="vertical-align:middle"><span>Add to list</span></button>-->
             </div>
-
-
         </div>
 
-
+        <div class="container">
+            <div id="MyTODOlist">
+                <h2>My TO-DO list:</h2>
+                    <ul id="toDoIzmisljen">
+                          <li>Buy milk</li>
+                          <li>Home work for programming</li>
+                          <li>Relax</li>
+                          <li>Organize office</li>
+                    </ul>
+            </div>
+        </div>
 
 		<div id="footer">
 			<p>

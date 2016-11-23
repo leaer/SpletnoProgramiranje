@@ -15,8 +15,12 @@ h1{
 
 }
 h2{
-    font-size: 1.5em;
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;  }
+    font-size: 20px;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    font-weight: normal;
+    margin-top:10px;
+    margin-left: 25px;
+    }
 a{
 	color: #2a103c;
 	text-decoration: none;
@@ -85,30 +89,40 @@ margin: 20px;
 	}
 
 .container {
-    margin: 40px 0;
-    background: white;
+    margin: 40px 5px;
+    background-color: white;
     padding: 20px;
     clear: both;
     opacity: 0.6;
     filter: alpha(opacity=60);
-    height: auto;
+    height: 300px;
     overflow: hidden;
+    width: 45%;
+    display: inline-block;
+
+}
+.container2 {
+    background-color: #2a103c;
+    padding: 50px;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    width: 45%;
 }
 
+
 #navPoOpravilih {
-    width: 50%;
+    width: 600px;
     text-align: center;
-    background-color: #555;
+    background-color: #767676;
     overflow: auto;
     margin:auto;
+    margin-top:40px;
 }
     #navPoOpravilih ul li{
         display: block;
     }
-
-
     #navPoOpravilih ul li a {
-        width: 25%;
+        width: 200px;
         padding: 20px 0;
         float: left;
         transition: all 0.3s ease;
@@ -116,63 +130,19 @@ margin: 20px;
         font-size: 15px;
         font-family:Century Gothic,CenturyGothic,AppleGothic,sans-serif;
         text-decoration:none;
-
+    }
+    #navPoOpravilih ul li a:hover {
+        background-color: #999999;
+    }
+    #navPoOpravilih ul li a:active {
+        background-color: #999999;
     }
 
-#navPoOpravilih ul li a:hover {
-    background-color: #000;
+#Opravilo {
+    margin-top:10px;
+    margin-left: 30px;
 }
-
-#navPoOpravilih ul li a:active {
-    background-color: #695776;
-}
-
-/* The side navigation menu
-#navPoOpravilih {
-    margin-top: 40px;
-    height: 100%; /* 100% Full-height */
-   /* width: 0; /* 0 width - change this with JavaScript */
-   /* position: fixed; /* Stay in place */
-  /*  top: 0;
-    left: 0;
-    background-color: #fbfbfb
-    padding-top: 60px; /* Place content 60px from the top
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-}
-/*
-    #navPoOpravilih ul li{
-            display: block;
-            height: 50px;
-    }
-
-	#navPoOpravilih ul li a{
-            margin-top: 15px;
-            text-decoration: none;
-            padding: 15px;
-            background: #2a103c;
-            font-family:Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-            color: white;
-            text-decoration: none;
-            display: block;
-    }*/
-
-/* The navigation menu links
-#navPoOpravilih ul li a{
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s
-}*/
-
-#opravila {
-    margin-top: 15px;
-    margin-left: 100px;
-    float:left;
-    clear: left;
-}
-    #opravila label{
+    #Opravilo label{
         font-family:Century Gothic,CenturyGothic,AppleGothic,sans-serif;
         font-size: 15px;
         color: #0ea7ee;
@@ -189,42 +159,16 @@ input[type="text"] {
     margin: auto;
 }
 
-
-#Podrocje {
-    margin-top: 20px;
-    margin-left: 100px;
-    float:left;
-    clear: left;
-}
-    #Podrocje label{
-        font-family:Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-        font-size: 15px;
-        color: #0ea7ee;
-        padding: 30px;
-
-    }
-    #Podrocje select{
-       background: transparent;
-       padding: 5px;
-       font-size: 15px;
-       line-height: 1;
-       font-family:Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-       height: 34px;
-    }
-
 #DueDate {
-    margin-top: 20px;
-    margin-left: 100px;
-
-    clear: left;
+     margin-top:10px;
+     line-height: 25px;
+     margin-left: 30px;
 }
-
     #DueDate label{
         font-family:Century Gothic,CenturyGothic,AppleGothic,sans-serif;
         font-size: 15px;
         color: #0ea7ee;
         padding: 30px;
-
     }
 
     #DueDate select{
@@ -236,25 +180,43 @@ input[type="text"] {
        height: 34px;
     }
 
+#Podrocje {
+    margin-top:10px;
+    line-height: 25px;
+    margin-left: 30px;
+}
+    #Podrocje label{
+        font-family:Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+        font-size: 15px;
+        color: #0ea7ee;
+        padding: 30px;
+    }
+    #Podrocje select{
+       background: transparent;
+       padding: 5px;
+       font-size: 15px;
+       line-height: 1;
+       font-family:Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+       height: 34px;
+    }
+
 #Prioriteta {
-    margin-top: 20px;
-    margin-left: 100px;
-    float:left;
-    clear: left;
+    margin-top:10px;
+    margin-left: 30px;
+    line-height: 25px;
 }
     #Prioriteta label {
         font-family:Century Gothic,CenturyGothic,AppleGothic,sans-serif;
         font-size: 15px;
         color: #0ea7ee;
         padding: 30px;
-
     }
     #Prioriteta label label{
         font-family:Century Gothic,CenturyGothic,AppleGothic,sans-serif;
         font-size: 15px;
         color: black;
         padding:20px;
-
+        line-height: 25px;
     }
     #Prioriteta form{
        background: transparent;
@@ -264,24 +226,20 @@ input[type="text"] {
        height: 34px;
     }
 
-#notes {
-    margin-top: 20px;
-    margin-left: 100px;
-    clear: left;
+#Notes {
+    margin-top:10px;
+    margin-left: 30px;
 }
-    #notes label{
+    #Notes label{
         font-family:Century Gothic,CenturyGothic,AppleGothic,sans-serif;
         font-size: 15px;
         color: #0ea7ee;
         padding: 30px;
-
     }
-
+/*
 #Add {
-    margin-top: 20px;
-    margin-left: 130px;
-    float:left;
-    clear: left;
+    margin-left: 60px;
+    margin-top:10px;
 }
     #Add button {
         background-color: #2a103c;
@@ -297,23 +255,44 @@ input[type="text"] {
 		box-shadow: 0px 1px 1px #666;
 	}
 
-
-input[type="submit"] {
-    height: 40px;
-    background-color: #2a103c;
-    font-size: 18px;
-    outline: none;
-    border: 1px solid #333;
-    cursor: pointer;
-    color: white;
-    padding: 10px;
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-    float: left;
-}
-
 input[type="submit"]:hover {
     background-color: #695776;
+}*/
+
+input[type="button"]{
+    margin-left: 60px;
+    margin-top:10px;
+    background-color: #2a103c;
+    color: white;
+    padding: 15px;
+    border: none;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    transition: all 0.3s ease;
 }
+input[type="button"]:hover{
+    background-color: #695776;
+    box-shadow: 1px 1px #bebebe;
+}
+
+
+#MyTODOlist ul li{
+    margin-top:10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    position: relative;
+    padding: 5px;
+    font-size: 15px;
+    transition: 0.2s;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    list-style-type: none;
+}
+    #MyTODOlist ul li:hover{
+        text-shadow: 1px 1px #bebebe;
+    }
+
+
+
 
 #footer{
 	border-bottom: 1px #ccc solid;
