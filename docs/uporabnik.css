@@ -14,10 +14,23 @@ h1, h2, h3, h4{
 }
 h1{
     font-size: 2.0em;
-
 }
 h2{
-    font-size: 1.5em; }
+    font-size: 20px;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    font-weight: normal;
+    text-align: center;
+}
+h3{
+    font-size: 15px;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    font-weight: normal;
+    color:#2a103c;
+    margin-top:10px;
+    margin-left: 25px;
+    font-weight: bold;
+}
+
 a{
 	color: #2a103c;
 	text-decoration: none;
@@ -29,18 +42,16 @@ a{
 
 body{
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-    font-size: 80%;
+    font-size: 12px;
     line-height: 1.2em;
     width: 100%;
-    margin: 0;
+    margin:0;
     background: #eee;
-
 }
 
 #page{
-    margin: 20px;
+margin: 20px;
 }
-
 
 #wrap{
     background: url(glava.png);
@@ -56,17 +67,6 @@ body{
 	display: inline-block;
 }
 
-.container {
-    color: black;
-    margin: 40px 0;
-    background: white;
-    padding: 20px;
-    clear: both;
-    opacity: 0.7;
-    filter: alpha(opacity=70);
-    text-align:center;
-}
-
 #navBar{
     margin-top: 170px;
 	width: 60%;
@@ -74,7 +74,6 @@ body{
 	text-align: right;
 	float: right;
 }
-
     #navBar ul li{
         display: inline-block;
         height: 50px;
@@ -85,6 +84,7 @@ body{
 		background: #2a103c;
 		font-family:Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 		color: white;
+		transition: all 0.3s ease;
     }
 	#navBar ul li a:hover{
 		background-color: #695776;
@@ -97,16 +97,85 @@ body{
 	    display: block;
 	}
 
-#background {
-     margin: 30px 0;
-     background: white;
-     padding: 20px;
-     clear: both;
-     opacity: 0.5;
-     filter: alpha(opacity=50);
-     text-align: center;
+#navBar{
+    margin-top: 170px;
+	width: 60%;
+	display: inline-block;
+	text-align: right;
+	float: right;
+}
+    #navBar ul li{
+        display: inline-block;
+        height: 50px;
+    }
+	#navBar ul li a{
+	    text-decoration: none;
+		padding: 15px;
+		background: #2a103c;
+		font-family:Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+		color: white;
+		transition: all 0.3s ease;
+    }
+	#navBar ul li a:hover{
+		background-color: #695776;
+		box-shadow: 0px 1px 1px #666;
+	}
+	#navBar ul li a:active{
+	    background-color: #2a103c;
+	}
+	#navBar ul li:hover ul{
+	    display: block;
+	}
+
+.container {
+    margin: 40px 5px;
+    background-color: white;
+    padding: 20px;
+    clear: both;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    height: 300px;
+    overflow: hidden;
+    width: 45%;
+    display: inline-block;
+}
+.container2 {
+    margin: 40px 5px;
+    background-color: #e5e5e5;
+    padding: 20px;
+    clear: both;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    height: 300px;
+    overflow: hidden;
+    width: 45%;
+    display: inline-block;
 }
 
+canvas {
+    margin: auto;
+    display: block;
+}
+
+
+#opravilaDone li, #opravila li{
+    margin-top:10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    position: relative;
+    padding: 5px;
+    font-size: 15px;
+    transition: 0.2s;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    list-style-type: none;
+    font-weight: bold;
+    color:#6a6a6a;
+}
+    #opravilaDone li:hover, #opravila li:hover{
+        text-shadow: 1px 1px #bebebe;
+    }
+}
 
 #footer{
 	border-bottom: 1px #ccc solid;
@@ -119,5 +188,6 @@ body{
 		color: #666;
 	}
 
-#background
-ul li a{ box-shadow: 0px 1px 1px #999; }
+#background ul li a{
+    box-shadow: 0px 1px 1px #999;
+}

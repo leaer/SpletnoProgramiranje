@@ -14,10 +14,14 @@ h1, h2, h3, h4{
 }
 h1{
     font-size: 2.0em;
-
 }
 h2{
-    font-size: 1.5em; }
+    font-size: 20px;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    font-weight: normal;
+    margin-top:10px;
+    margin-left: 25px;
+    }
 a{
 	color: #2a103c;
 	text-decoration: none;
@@ -29,18 +33,16 @@ a{
 
 body{
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-    font-size: 80%;
+    font-size: 12px;
     line-height: 1.2em;
     width: 100%;
-    margin: 0;
+    margin:0;
     background: #eee;
-
 }
 
 #page{
-    margin: 20px;
+margin: 20px;
 }
-
 
 #wrap{
     background: url(glava.png);
@@ -54,17 +56,6 @@ body{
 	margin-top: 170px;
 	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 	display: inline-block;
-}
-
-.container {
-    color: black;
-    margin: 40px 0;
-    background: white;
-    padding: 20px;
-    clear: both;
-    opacity: 0.7;
-    filter: alpha(opacity=70);
-    text-align:center;
 }
 
 #navBar{
@@ -85,6 +76,7 @@ body{
 		background: #2a103c;
 		font-family:Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 		color: white;
+		transition: all 0.3s ease;
     }
 	#navBar ul li a:hover{
 		background-color: #695776;
@@ -96,6 +88,16 @@ body{
 	#navBar ul li:hover ul{
 	    display: block;
 	}
+.container {
+    color: black;
+    margin: 40px 0;
+    background: white;
+    padding: 20px;
+    clear: both;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    text-align:center;
+}
 
 #form p {
     margin-top: 10px;

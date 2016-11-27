@@ -14,7 +14,6 @@ h1, h2, h3, h4{
 }
 h1{
     font-size: 2.0em;
-
 }
 h2{
     font-size: 20px;
@@ -33,11 +32,11 @@ a{
 	}
 
 body{
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;;
-    font-size: 80%;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    font-size: 12px;
     line-height: 1.2em;
     width: 100%;
-    margin: 0;
+    margin:0;
     background: #eee;
 }
 
@@ -66,6 +65,7 @@ margin: 20px;
 	text-align: right;
 	float: right;
 }
+
     #navBar ul li{
         display: inline-block;
         height: 50px;
@@ -76,6 +76,7 @@ margin: 20px;
 		background: #2a103c;
 		font-family:Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 		color: white;
+		transition: all 0.3s ease;
     }
 	#navBar ul li a:hover{
 		background-color: #695776;
@@ -85,14 +86,6 @@ margin: 20px;
 	    background-color: #2a103c;
 	}
 	#navBar ul li:hover ul{
-	    display: block;
-	}
-	#navBar ul ul {
-	    display: none;
-	    position: absolute;
-	    top: 65px;
-	}
-	#navBar ul ul li{
 	    display: block;
 	}
 

@@ -4,25 +4,54 @@
     <meta charset="UTF-8">
     <meta name="avtor" content="Lea" />
     <title>Uporabnik</title>
-    <link rel="stylesheet" href="ToDo.css" type="text/css" />
+    <link rel="stylesheet" href="uporabnik.css" type="text/css" />
 </head>
 
 <body>
 <div id="page">
         <div id="wrap">
+            <div id="logo">
+                <h1><a href="index.html">Home</a></h1>
+            </div>
+
             <div id="navBar">
                 <ul>
                     <!--<li><a href="index.html">Home</a></li>-->
                     <li><a href="opravila.html">Opravila</a></li>
                     <li><a href="koledar.html">Koledar</a></li>
                     <li><a href="uporabnik.html">Uporabnik</a></li>
-                    <li><a href="prijava.html">Prijavi se!</a></li>
+                    <li><a href="prijava.html">Prijavi se</a></li>
                 </ul>
             </div>
-            <div id="logo">
-                <h1><a href="ToDo.html">Home</a></h1>
-            </div>
         </div>
+
+    <div class="container">
+        <h2>Pozdravljen, uporabnik!</h2>
+        <br>
+
+        <div id="opravilaDone">
+            <h3>Opravila, ki si jih končal/a v tem tednu:</h3>
+                <li>Home work for programming</li>
+                 <p>Due date: 27/11/2016 00:00, Področje: <font color="green">school</font>, Priority: 5, Notes: /  </p>
+                <li>Write daily report</li>
+                 <p>Due date: 27/11/2016 20:00, Področje: <font color="orange">work</font>, Priority: 4, Notes: Sth boring about work  </p>
+            </div>
+
+        <div id="opravila">
+            <br>
+            <h3>Opravila, ki jih moraš opraviti:</h3>
+            <li>Buy milk </li>
+                 <p>Due date: 12/12/2016 14:40, Področje: <font color="red">shopping</font>, Priority: 3, Notes: /  </p>
+              <li>Organize office</li>
+                 <p>Due date: 1/12/2016 17:30, Področje: <font color="blue">other</font>, Priority: 2, Notes: /  </p>
+        </div>
+    </div>
+
+    <div class="container2">
+        <h2>Graf aktivnosti</h2>
+            <canvas id="myCanvas" width="300" height="250" style="border:1px solid #7f7f7f;"</canvas>
+    </div>
+
     <div id="footer">
         <p>
             Made by <a href="/" target="_blank">[Lea]</a>
