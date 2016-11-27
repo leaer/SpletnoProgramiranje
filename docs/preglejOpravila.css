@@ -1,0 +1,195 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+p{ line-height: 1em; }
+
+h1, h2, h3, h4{
+    color: #0ea7ee;
+	line-height: 1.1em;
+	margin: 0 0 .5em 0;
+}
+h1{
+    font-size: 2.0em;
+
+}
+h2{
+    font-size: 20px;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    font-weight: normal;
+    text-align: center;
+    }
+a{
+	color: #2a103c;
+	text-decoration: none;
+}
+	a:hover,
+	a:active{
+	text-decoration: underline;
+	}
+
+body{
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    font-size: 12px;
+    line-height: 1.2em;
+    width: 100%;
+    margin:0;
+    background: #eee;
+    text-align: center;
+}
+
+#page{
+margin: 20px;
+}
+
+#wrap{
+    background: url(glava.png);
+    height: 200px;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+
+#logo{
+	width: 35%;
+	margin-top: 170px;
+	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	display: inline-block;
+}
+
+#navBar{
+    margin-top: 170px;
+	width: 60%;
+	display: inline-block;
+	text-align: right;
+	float: right;
+}
+
+    #navBar ul li{
+        display: inline-block;
+        height: 50px;
+    }
+	#navBar ul li a{
+	    text-decoration: none;
+		padding: 15px;
+		background: #2a103c;
+		font-family:Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+		color: white;
+		transition: all 0.3s ease;
+    }
+	#navBar ul li a:hover{
+		background-color: #695776;
+		box-shadow: 0px 1px 1px #666;
+	}
+	#navBar ul li a:active{
+	    background-color: #2a103c;
+	}
+	#navBar ul li:hover ul{
+	    display: block;
+	}
+
+.container {
+    margin-left: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 20px;
+    clear: both;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    height: 300px;
+    overflow: hidden;
+    width: 29%;
+    display: inline-block;
+
+}
+.container2 {
+    margin-left: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    clear: both;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    height: 300px;
+    overflow: hidden;
+    width: 29%;
+    display: inline-block;
+}
+.container3 {
+    margin-left: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    background-color: #e5e5e5;
+    padding: 20px;
+    clear: both;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    height: 300px;
+    overflow: hidden;
+    width: 29%;
+    display: inline-block;
+}
+
+#navPoOpravilih {
+    width: 600px;
+    text-align: center;
+    background-color: #767676;
+    overflow: auto;
+    margin:auto;
+    margin-top:40px;
+}
+    #navPoOpravilih ul li{
+        display: block;
+    }
+    #navPoOpravilih ul li a {
+        width: 200px;
+        padding: 20px 0;
+        float: left;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: 15px;
+        font-family:Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+        text-decoration:none;
+    }
+    #navPoOpravilih ul li a:hover {
+        background-color: #999999;
+    }
+    #navPoOpravilih ul li a:active {
+        background-color: #999999;
+    }
+
+#Datumi li,#Prioritete li,#Podrocje li{
+    margin-top:10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    position: relative;
+    padding: 5px;
+    font-size: 15px;
+    transition: 0.2s;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    list-style-type: none;
+    text-align: center;
+    font-weight: bold;
+
+}
+    #Datumi li:hover,#Prioritete li:hover,#Podrocje li:hover{
+        text-shadow: 1px 1px #bebebe;
+    }
+
+
+#footer{
+	border-bottom: 1px #ccc solid;
+	margin-bottom: 10px;
+}
+	#footer p{
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 80%;
+		color: #666;
+	}
+
+#background
+ul li a{ box-shadow: 0px 1px 1px #999; }

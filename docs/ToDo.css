@@ -7,7 +7,6 @@ p{ line-height: 1em; }
 
 h1, h2, h3, h4{
     color: #0ea7ee;
-    font-family:
 	font-weight: normal;
 	line-height: 1.1em;
 	margin: 0 0 .5em 0;
@@ -41,15 +40,16 @@ body{
 
     margin: 20px;
 }
-
+/*
 .container {
-    width: 500px;
-    height: 400px;
-    text-align: center;
-    background: #2a103c;
-    margin: 0 auto;
-    margin-top: 150px;
-}
+     margin: 40px 0;
+    background: white;
+    padding: 20px;
+    clear: both;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    text-align:center;
+}*/
 
 #wrap{
     background: url(glava.png);
@@ -71,6 +71,7 @@ body{
 	display: inline-block;
 	text-align: right;
 	float: right;
+
 }
 
     #navBar ul li{
@@ -83,25 +84,20 @@ body{
 		background: #2a103c;
 		font-family:Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 		color: white;
+
+
     }
 	#navBar ul li a:hover{
 		background-color: #695776;
 		box-shadow: 0px 1px 1px #666;
 	}
 	#navBar ul li a:active{
-	    background-color: #2a103c;
+	    background-color: #695776;
 	}
 	#navBar ul li:hover ul{
 	    display: block;
 	}
-	#navBar ul ul {
-	    display: none;
-	    position: absolute;
-	    top: 65px;
-	}
-	#navBar ul ul li{
-	    display: block;
-	}
+
 
 #background {
      margin: 40px 0;

@@ -12,6 +12,7 @@ h1, h2, h3, h4{
 }
 h1{
     font-size: 2.0em;
+
 }
 h2{
     font-size: 20px;
@@ -30,11 +31,11 @@ a{
 	}
 
 body{
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-    font-size: 12px;
+    font-family: arial;
+    font-size: 80%;
     line-height: 1.2em;
     width: 100%;
-    margin:0;
+    margin: 0;
     background: #eee;
 }
 
@@ -63,6 +64,7 @@ margin: 20px;
 	text-align: right;
 	float: right;
 }
+
     #navBar ul li{
         display: inline-block;
         height: 50px;
@@ -104,8 +106,9 @@ margin: 20px;
     padding: 50px;
     opacity: 0.6;
     filter: alpha(opacity=60);
-    width: 46%;
+    width: 45%;
 }
+
 
 #navPoOpravilih {
     width: 600px;
@@ -177,13 +180,6 @@ input[type="text"] {
        height: 34px;
     }
 
-input[type="datetime-local"] {
-    font-family:Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-    font-size: 15px;
-    padding: 5px;
-    cursor: pointer;
-}
-
 #Podrocje {
     margin-top:10px;
     line-height: 25px;
@@ -202,7 +198,6 @@ input[type="datetime-local"] {
        line-height: 1;
        font-family:Century Gothic,CenturyGothic,AppleGothic,sans-serif;
        height: 34px;
-       cursor:pointer;
     }
 
 #Prioriteta {
@@ -236,13 +231,35 @@ input[type="datetime-local"] {
     margin-left: 30px;
 }
     #Notes label{
-        font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+        font-family:Century Gothic,CenturyGothic,AppleGothic,sans-serif;
         font-size: 15px;
         color: #0ea7ee;
         padding: 30px;
     }
+/*
+#Add {
+    margin-left: 60px;
+    margin-top:10px;
+}
+    #Add button {
+        background-color: #2a103c;
+        color: white;
+        padding: 15px;
+        border: none;
+        font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+        transition: all 0.3s ease;
+    }
 
-input[type="button"],input[type="reset"]{
+    #Add button:hover{
+		background-color: #695776;
+		box-shadow: 0px 1px 1px #666;
+	}
+
+input[type="submit"]:hover {
+    background-color: #695776;
+}*/
+
+input[type="button"]{
     margin-left: 60px;
     margin-top:10px;
     background-color: #2a103c;
@@ -251,9 +268,8 @@ input[type="button"],input[type="reset"]{
     border: none;
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     transition: all 0.3s ease;
-    cursor: pointer;
 }
-input[type="button"]:hover,input[type="reset"]:hover{
+input[type="button"]:hover{
     background-color: #695776;
     box-shadow: 1px 1px #bebebe;
 }
@@ -270,8 +286,6 @@ input[type="button"]:hover,input[type="reset"]:hover{
     transition: 0.2s;
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     list-style-type: none;
-    font-weight: bold;
-    color:#6a6a6a;
 }
     #MyTODOlist ul li:hover{
         text-shadow: 1px 1px #bebebe;

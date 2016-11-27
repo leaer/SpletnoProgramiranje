@@ -63,6 +63,7 @@ margin: 20px;
 	text-align: right;
 	float: right;
 }
+
     #navBar ul li{
         display: inline-block;
         height: 50px;
@@ -87,25 +88,31 @@ margin: 20px;
 	}
 
 .container {
-    margin: 40px 5px;
+    margin: 40px 5px ;
     background-color: white;
     padding: 20px;
     clear: both;
     opacity: 0.6;
     filter: alpha(opacity=60);
-    height: 300px;
+    height: auto;
     overflow: hidden;
-    width: 45%;
+    width: 45.5%;
     display: inline-block;
 
 }
 .container2 {
-    background-color: #2a103c;
-    padding: 50px;
+    margin: 40px 5px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    clear: both;
     opacity: 0.6;
     filter: alpha(opacity=60);
-    width: 46%;
+    height: auto;
+    overflow: hidden;
+    width: 45.5%;
+    display: inline-block;
 }
+
 
 #navPoOpravilih {
     width: 600px;
@@ -177,13 +184,6 @@ input[type="text"] {
        height: 34px;
     }
 
-input[type="datetime-local"] {
-    font-family:Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-    font-size: 15px;
-    padding: 5px;
-    cursor: pointer;
-}
-
 #Podrocje {
     margin-top:10px;
     line-height: 25px;
@@ -202,7 +202,6 @@ input[type="datetime-local"] {
        line-height: 1;
        font-family:Century Gothic,CenturyGothic,AppleGothic,sans-serif;
        height: 34px;
-       cursor:pointer;
     }
 
 #Prioriteta {
@@ -236,24 +235,44 @@ input[type="datetime-local"] {
     margin-left: 30px;
 }
     #Notes label{
-        font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+        font-family:Century Gothic,CenturyGothic,AppleGothic,sans-serif;
         font-size: 15px;
         color: #0ea7ee;
         padding: 30px;
     }
 
-input[type="button"],input[type="reset"]{
-    margin-left: 60px;
-    margin-top:10px;
+#check form {
+    font-size: 15px;
+    font-weight: bold;
+    color:#6a6a6a;
+}
+
+#check form p{
+    font-size: 12px;
+    font-weight: normal;
+    padding:5px;
+}
+
+input[type="checkbox"] {
+    margin-left: 30px;
+    margin-top:20px;
+    padding: 15px;
+    background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+    cursor: pointer;
+}
+
+input[type="button"]{
+    margin-left: 30px;
+    margin-top:20px;
     background-color: #2a103c;
     color: white;
     padding: 15px;
     border: none;
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     transition: all 0.3s ease;
-    cursor: pointer;
+    cursor:pointer;
 }
-input[type="button"]:hover,input[type="reset"]:hover{
+input[type="button"]:hover{
     background-color: #695776;
     box-shadow: 1px 1px #bebebe;
 }
@@ -276,6 +295,7 @@ input[type="button"]:hover,input[type="reset"]:hover{
     #MyTODOlist ul li:hover{
         text-shadow: 1px 1px #bebebe;
     }
+
 
 #footer{
 	border-bottom: 1px #ccc solid;
