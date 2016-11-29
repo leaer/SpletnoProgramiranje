@@ -12,7 +12,7 @@ Sprva sem želela narediti stran v angleščini, vendar sem po pogovoru s parimi
 
 Aplikacija bo podprta na računalnikih. Glede na to, da imamo študenti veliko večino časa pri sebi mobilne telefone, bom poskusila narediti, oziroma povezati aplikacijo tudi z mobilniki. 
 
-Stran sem poskusila odpreti v večih brskalnikih. V Firefoxu sem opazila, da <input type="datetime-local> ne deluje, prav tako je izgled <select> okenca ter checkboxa drugačen kot v Chromu. V Chromu in IE vse deluje, vendar se določeni gradniki malce razlikujejo po izgledu (checkbox, select).
+Stran sem poskusila odpreti v večih brskalnikih. V Firefoxu sem opazila, da "datetime-local! ne deluje, prav tako je izgled select okenca ter checkboxa drugačen kot v Chromu. V Chromu in IE vse deluje, vendar se določeni gradniki malce razlikujejo po izgledu (checkbox, select).
 
 Ponosna sem predvsem na izgled strani opravila oz. dodaj opravilo, saj mi deluje pregledna in urejena. Veliko truda sem vložila tudi v izgled gumbov, kako se spremeni barva, doda senca, ko gremo z miško preko njih. Veliko sem se ukvarjala tudi z animiranjem posnetka na naslovni strani. Veliko dela sem vložila tudi v stran koledar, saj sem za izdelavo tabele z dnevnim in mesečnim koledarjem vložila veliko časa (ko gremo z miško skozi dneve, se polja drugače obarvajo...). Sama sem zrisala tudi banner v glavi strani.
 
