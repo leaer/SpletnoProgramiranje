@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import Uporabnik, Opravilo
 
-# Register your models here.
+admin.site.register(Uporabnik)
+admin.site.register(Opravilo)

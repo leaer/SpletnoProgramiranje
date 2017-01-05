@@ -6,17 +6,10 @@
     <meta name="avtor" content="Lea" />
     <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
     <title>To-do list</title>
-    <link rel="stylesheet" href="ToDo.css" type="text/css" />
+	{% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'toDo/css/ToDo.css' %}" type="text/css" />
 </head>
 
-<body>
-	<div class="container">
-		<div id="background">
-			{% block content %}
-			{% endblock %}
-		</div>
-	</div>
- 
-</body>
-
+{% block content %}
+{% endblock %}
 </html>

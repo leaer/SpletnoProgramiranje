@@ -2,6 +2,8 @@
 
 {% block content %}
 
+{% include "toDo/includes/htmlsnippet.html" %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,13 +25,27 @@
             <div id="navBar">
                 <ul>
                     <!--<li><a href="index.html">Home</a></li>-->
-                    <li><a href="opravila.html">Opravila</a></li>
-                    <li><a href="koledar.html">Koledar</a></li>
-                    <li><a href="uporabnik.html">Uporabnik</a></li>
-                    <li><a href="prijava.html">Prijavi se</a></li>
+                    <li><a href="registracija.html">Registriraj se</a></li>
+					<li><a onclick="return showUser(this)">Prijavi se</a></li>
                 </ul>
             </div>
         </div>
+		
+		<div id="prijavaCont">
+        <h3>Prijavi se!</h3>
+        <div id="form">
+            <form>
+                <p>Uporabniško ime: </p>
+                    <input type="text" name="username">
+                <p>Geslo: </p>
+                    <input type="password" name="password">
+            </form>
+        </div>
+
+        <div id="prijavi">
+            <input type="button" id="btnPrijava" value="Prijavi se">
+        </div>
+    </div>
 
         <div class="container">
             <div id="background">
@@ -57,4 +73,5 @@
 
 </body>
 </html>
+
 {% endblock %}
