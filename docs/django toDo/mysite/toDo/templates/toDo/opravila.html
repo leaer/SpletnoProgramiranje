@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="avtor" content="Lea" />
+    <title>Seznam opravil</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'toDo/css/opravila.css' %}" type="text/css" />
+</head>
+
+<body>
+	<div id="page">
+
+        <div id="wrap">
+            <div id="logo">
+                <h1><a href="{% url 'index'%}">Domov</a></h1>
+            </div>
+
+            <div id="navBar">
+                <ul>
+                    <li><a href="{% url 'preglej_opravila'%}">Opravila</a></li>
+                    <li><a href="koledar.html">Koledar</a></li>
+                    <li><a href="uporabnik.html">Uporabnik</a></li>
+                    <li><a href="odjava.html">Odjava</a></li>
+                </ul>
+            </div>
+        </div>
+
+		<div id="navPoOpravilih">
+                <ul>
+                    <li><a href="{% url 'dodaj_opravilo'%}">Dodaj opravilo</a></li>
+                    <li><a href="{% url 'preglej_opravila'%}">Preglej opravila</a></li>
+                    <li><a href=#>Odstrani opravilo</a></li>
+                </ul>
+            </div>
+			
+        <div class="containerReg">
+			<div id="MyTODOlist">
+                <h2>Dodaj opravilo:</h2>
+				<form method='POST' action="{% url 'dodaj_opravilo'%}">{% csrf_token %}
+					{{form.as_p}}
+					<input type='submit' value='Dodaj'/>
+				</form>
+			</div>	
+		</div>
+		
+		<div id="footer">
+			<p>
+				Made by <a href="/" target="_blank">[Lea]</a>
+			</p>
+		</div>
+	</div>
+</body>
+</html>

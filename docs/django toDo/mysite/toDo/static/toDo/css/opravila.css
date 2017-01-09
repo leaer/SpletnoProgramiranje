@@ -1,0 +1,361 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+p{ line-height: 1em; }
+
+h1, h2, h3, h4{
+    color: #990000;
+	line-height: 1.1em;
+	margin: 0 0 .5em 0;
+}
+h1{
+    font-size: 2.0em;
+
+}
+h4{
+	color:grey;
+	font-size: 13px;
+	font-weight: bold;
+	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	
+}
+h2{
+    font-size: 20px;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    font-weight: bold;
+    margin-top:10px;
+    margin-left: 25px;
+	color:#990000;
+	
+    }
+a{
+	color: #990000;
+	text-decoration: none;
+}
+	a:hover,
+	a:active{
+	text-decoration: underline;
+	}
+
+body{
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    font-size: 12px;
+    line-height: 1.2em;
+    width: 100%;
+    margin:0;
+    background: #eee;
+
+}
+
+#page{
+	margin: 0;
+}
+
+#wrap{
+    background: #d9c6c9;
+    height: 80px;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+
+#logo{
+    margin-left: 1%;
+	width: 35%;
+	margin-top: 50px;
+	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	display: inline-block;
+}
+
+#navBar{
+	margin-right: 1%;
+    margin-top: 50px;
+	width: 60%;
+	display: inline-block;
+	text-align: right;
+	float: right;
+}
+    #navBar ul li{
+        display: inline-block;
+        height: 50px;
+    }
+	#navBar ul li a{
+	    text-decoration: none;
+		padding: 15px;
+		background: #666;
+		font-family:Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+		color: white;
+		transition: all 0.3s ease;
+    }
+	#navBar ul li a:hover{
+		background-color: grey;
+		color: black;
+		box-shadow: 0px 1px 1px #666;
+	}
+	#navBar ul li a:active{
+	    background-color: grey;
+		
+	}
+	#navBar ul li:hover ul{
+	    display: block;
+	}
+
+.container {
+    margin-left: 10px;
+    margin-top:2%;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 20px;
+    clear: both;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    height: 600px;
+    overflow: hidden;
+    width: 29%;
+    display: inline-block;
+	text-decoration:none;
+	list-style-type: none;
+}
+.container2 {
+    margin-left: 10px;
+    margin-top:2%;
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    clear: both;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    height: 600px;
+    overflow: hidden;
+    width: 29%;
+    display: inline-block;
+	text-decoration:none;
+	list-style-type: none;
+}
+.container3 {
+    margin-left: 10px;
+    margin-top:2%;
+    margin-bottom: 20px;
+    background-color: #e5e5e5;
+    padding: 20px;
+    clear: both;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    height: 600px;
+    overflow: hidden;
+    width: 29%;
+    display: inline-block;
+	text-decoration:none;
+	list-style-type: none;
+}
+
+.containerReg {
+	margin-left: 15%;
+    margin-top:2%;
+    background-color: white;
+    padding: 20px;
+    clear: both;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    height: auto;
+    overflow: hidden;
+    width: 67%;
+    display: inline-block;
+}
+
+#Registracija {
+	margin-left: 2%;
+	margin-top: 2%;
+	
+}
+
+input[type="submit"] {
+	
+    margin-top:10px;
+    background-color: #2a103c;
+    color: white;
+    padding: 15px;
+    border: none;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#navPoOpravilih {
+    width: 600px;
+    text-align: center;
+    background-color: #767676;
+    overflow: auto;
+    margin:auto;
+    margin-top:2%;
+}
+    #navPoOpravilih ul li{
+        display: block;
+    }
+    #navPoOpravilih ul li a {
+        width: 200px;
+        padding: 20px 0;
+        float: left;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: 15px;
+        font-family:Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+        text-decoration:none;
+    }
+    #navPoOpravilih ul li a:hover {
+        background-color: #999999;
+    }
+    #navPoOpravilih ul li a:active {
+        background-color: #999999;
+    }
+
+#Opravilo {
+    margin-top:10px;
+    margin-left: 30px;
+}
+    #Opravilo label{
+        font-family:Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+        font-size: 15px;
+        color: #0ea7ee;
+        padding: 30px;
+    }
+
+input[type="text"] {
+    border: 0;
+    outline: 0;
+    font-family:Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    font-size: 15px;
+    background: transparent;
+    border-bottom: 2px solid grey;
+    margin: auto;
+}
+
+#Datumi {
+     margin-top:10px;
+     line-height: 25px;
+     margin-left: 30px;
+	 color: black;
+}
+    #DueDate label{
+        font-family:Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+        font-size: 12px;
+        color: #0ea7ee;
+        padding: 30px;
+    }
+
+    #DueDate select{
+       background: transparent;
+       padding: 5px;
+       font-size: 12px;
+       line-height: 1;
+       font-family:Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+       height: 34px;
+    }
+
+input[type="datetime-local"] {
+    font-family:Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    font-size: 12px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#Podrocje {
+    margin-top:10px;
+    line-height: 25px;
+    margin-left: 30px;
+	
+	
+}
+    #Podrocje label{
+        font-family:Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+        font-size: 15px;
+        color: #0ea7ee;
+        padding: 30px;
+    }
+    #Podrocje select{
+       background: transparent;
+       padding: 5px;
+       font-size: 12px;
+       line-height: 1;
+       font-family:Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+       height: 34px;
+       cursor:pointer;
+    }
+
+#PreglejPrioritete, #PreglejPodrocje, #Podrocje {
+    margin-top:10px;
+    margin-left: 30px;
+    line-height: 25px;
+	text-decoration:none;
+	list-style-type: none;
+	
+}
+
+
+input[type="button"],input[type="reset"]{
+    margin-left: 60px;
+    margin-top:10px;
+    background-color: #2a103c;
+    color: white;
+    padding: 15px;
+    border: none;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+input[type="button"]:hover,input[type="reset"]:hover,input[type="submit"]:hover{
+    background-color: #695776;
+    box-shadow: 1px 1px #bebebe;
+}
+
+
+#MyTODOlist {
+
+    margin-left: 2%;
+    margin-right: 20px;
+    cursor: pointer;
+    position: relative;
+    padding: 5px;
+    font-size: 12px;
+    transition: 0.2s;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    list-style-type: none;
+    font-weight: none;
+    color:#6a6a6a;
+}
+#MyTODOlist ul li{
+    cursor: pointer;
+    position: relative;
+    padding: 5px;
+    font-size: 12px;
+    transition: 0.2s;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    list-style-type: none;
+    font-weight: none;
+    color:#6a6a6a;
+}
+
+    #MyTODOlist ul li:hover{
+        text-shadow: 1px 1px #bebebe;
+    }
+#MyTODOlist ul li p, #Datumi li p, #PreglejPodrocje li p, #PreglejPrioritete li p{
+	font-size: 12px;
+	font-weight: none;
+	color: black;
+}
+
+#footer{
+	border-bottom: 1px #ccc solid;
+	margin-bottom: 10px;
+	margin-top: 2%;
+}
+	#footer p{
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 80%;
+		color: #666;
+	}
+
+#background
+ul li a{ box-shadow: 0px 1px 1px #999; }

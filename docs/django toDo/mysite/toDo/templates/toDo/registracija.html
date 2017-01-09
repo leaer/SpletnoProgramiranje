@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="avtor" content="Lea" />
+    <title>Seznam opravil</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'toDo/css/opravila.css' %}" type="text/css" />
+</head>
+
+<body>
+	<div id="page">
+
+        <div id="wrap">
+            <div id="logo">
+                <h1><a href="{% url 'index'%}">Domov</a></h1>
+            </div>
+
+            <div id="navBar">
+                <ul>
+                    <li><a href="opravila.html">Prijavi se</a></li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="containerReg">
+            <div id="Registracija">
+                <h2>Registriraj se:</h2>
+					{{form.as_p}}
+					<input type='submit' value='Registracija'/>
+            </div>
+				
+        </div>
+
+		<div id="footer">
+			<p>
+				Made by <a href="/" target="_blank">[Lea]</a>
+			</p>
+		</div>
+	</div>
+</body>
+</html>

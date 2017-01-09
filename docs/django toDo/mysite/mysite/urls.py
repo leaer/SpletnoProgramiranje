@@ -19,5 +19,7 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-	url(r'^$', include('toDo.urls'))
+	url(r'^$', include('toDo.urls')),
+	url(r'^opravila/', include('toDo.urls')),
+	#url(r'^registracija/', include('toDo.urls'))
 ]
