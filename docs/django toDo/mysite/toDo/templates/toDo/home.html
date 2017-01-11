@@ -14,7 +14,7 @@
 	<div id="page">
         <div id="wrap">
             <div id="logo">
-                <img src="{% static "toDo/img/home.svg" %}" href="{%url 'index' %}"</i>
+                <h1><a href="{% url 'index'%}">Domov</a></h1>
 				
             </div>
 
@@ -22,7 +22,7 @@
                 <ul>
                     <!--<li><a href="index.html">Home</a></li>-->
                     <li><a href="{%url 'registracija' %}">Registriraj se</a></li>
-					<li><a onclick="return showUser(this)">Prijavi se</a></li>
+					<li><a href="{%url 'prijava' %}">Prijavi se</a></li>
                 </ul>
             </div>
         </div>

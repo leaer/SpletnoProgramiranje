@@ -39,10 +39,21 @@
 			
         <div class="containerReg">
 			<div id="MyTODOlist">
-                <h2>Dodaj opravilo:</h2>
+                <h2>Opravljena opravila:</h2>
 				<form method='POST' action="{% url 'dodaj_opravilo'%}">{% csrf_token %}
-					{{form.as_p}}
-					<input type='submit' value='Dodaj'/>
+					{%if vsa_opravila%}
+					<ul>
+						{%for Opravilo in vsa_opravila%}
+							{%if Opravilo.opravljen == True %}
+						<li><b>{{Opravilo.ime}}</b><br>
+						<p><b>Dokončati do: </b> {{Opravilo.dueDate}} <b>Prioriteta: </b> {{Opravilo.prioriteta}} <b>Področje: </b> {{Opravilo.podrocje}} <b>Zapiski: </b> {{Opravilo.zapiski}} 
+						<p></li>
+							{%endif%}
+						{%endfor%}
+					</ul>
+					{%else%}
+						<h3>V seznamu ni opravil.</h3>
+					{%endif%}
 				</form>
 			</div>	
 		</div>

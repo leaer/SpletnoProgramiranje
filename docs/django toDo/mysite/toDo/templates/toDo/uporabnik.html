@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="avtor" content="Lea" />
+    <title>Seznam opravil</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'toDo/css/ToDo.css' %}" type="text/css" />
+</head>
+
+<body>
+	<div id="page">
+
+        <div id="wrap">
+            <div id="logo">
+                {% if user.is_authenticated %}
+					Pozdravljen, {{user}} !
+				{%endif%}
+            </div>
+
+            <div id="navBar">
+                <ul>
+                    <li><a href="{% url 'preglej_opravila'%}">Opravila</a></li>
+                    <li><a href="koledar.html">Koledar</a></li>
+                    <li><a href="{% url 'uporabnik' %}">Uporabnik</a></li>
+                    <li><a href="{% url 'index' %}">Odjava</a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div id="Uporabnik">
+				{% if user.is_authenticated %}
+					<h2>Pozdravljen, {{user}} !</h2>
+				{%endif%}
+				<br>
+				<label>Uporabniško ime: </label>{{user}} <br><br>
+				<label>Ime: </label>{{user.first_name}}<br><br>
+				<label>Priimek: </label>{{user.last_name}}<br><br>
+				<label>Email: </label>{{user.email}}<br><br>
+				<label>Aplikaciji si se pridružil/a: </label>{{user.date_joined}}<br><br>
+				<label>Nazadnje vpisan/a: </label>{{user.last_login}}<br><br>
+				<br><br>
+				
+				<li><a href="{% url 'uredi_uporabnika' %}">Uredi račun</a></li>
+            </div>	
+        </div>
+		
+		<div class="container">
+           
+        </div>
+		
+		
+
+		<div id="footer">
+			<p>
+				Made by <a href="/" target="_blank">[Lea]</a>
+			</p>
+		</div>
+	</div>
+</body>
+</html>

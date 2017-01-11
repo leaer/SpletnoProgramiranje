@@ -19,7 +19,7 @@
 
             <div id="navBar">
                 <ul>
-                    <li><a href="{%url 'prijava' %}">Prijavi se</a></li>
+                    <li><a href="{% url 'registracija'%}">Registriraj se</a></li>
 
                 </ul>
             </div>
@@ -27,9 +27,15 @@
 
         <div class="containerReg">
             <div id="Registracija">
-                <h2>Registriraj se:</h2>{% csrf_token %}
+				<h2>Prijavi se:</h2>
+			
+				<form method='POST' action="{% url 'prijava'%}">{% csrf_token %}
 					{{form.as_p}}
-					<input type='submit' value='Registracija'/>
+					<input type='submit' value='Prijava'/>
+				</form>
+				
+                
+					
             </div>
 				
         </div>

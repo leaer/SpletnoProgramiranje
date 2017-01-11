@@ -33,11 +33,10 @@ class Uporabnik(models.Model):
 class Opravilo(models.Model):
 	uporabnik = models.ForeignKey(User, on_delete=models.CASCADE)
 	ime = models.CharField(max_length=200)
-	createDate = models.DateTimeField(default=datetime.datetime.now)
 	dueDate = models.DateTimeField(default=datetime.datetime.now)
 	prioriteta = models.CharField(max_length=1,choices=PRIORITETA, default=1)
 	podrocje = models.CharField(max_length=1, choices=PODROCJE, default=1)
-	zapiski = models.CharField(max_length=400)
+	zapiski = models.CharField(max_length=400, blank = True)
 	opravljen = models.BooleanField(default=False)
 	
 	def __str__(self):

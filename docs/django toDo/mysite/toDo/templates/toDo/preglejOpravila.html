@@ -15,16 +15,18 @@
 	<div id="page">
 
         <div id="wrap">
-            <div id="logo">
-                <h1><a href="{% url 'index'%}">Domov</a></h1>
+			<div id="logo">
+                {% if user.is_authenticated %}
+					Pozdravljen, {{user}} !
+				{%endif%}
             </div>
 
             <div id="navBar">
                 <ul>
                     <li><a href="{% url 'preglej_opravila'%}">Opravila</a></li>
                     <li><a href="koledar.html">Koledar</a></li>
-                    <li><a href="uporabnik.html">Uporabnik</a></li>
-                    <li><a href="prijava.html">Odjava</a></li>
+                    <li><a href="{% url 'uporabnik' %}">Uporabnik</a></li>
+                    <li><a href="{% url 'index' %}">Odjava</a></li>
                 </ul>
             </div>
         </div>
@@ -33,7 +35,7 @@
                 <ul>
                     <li><a href="{% url 'dodaj_opravilo'%}">Dodaj opravilo</a></li>
                     <li><a href="{% url 'preglej_opravila'%}">Preglej opravila</a></li>
-                    <li><a href="odstraniOpravilo.html">Odstrani opravilo</a></li>
+					<li><a href="{% url 'opravljena_opravila'%}">Opravljena opravila</a></li>
                 </ul>
             </div>
 
@@ -43,7 +45,10 @@
 				{%if vsa_opravila%}
 					<ul>
 						{%for Opravilo in vsa_opravila%}
-						<li><a href="/toDo/{{Opravilo.id}}"><b>{{Opravilo.ime}}</b><br>
+							{%if Opravilo.dueDate == datetime.datetime.now%}
+								<p>Opravilo {{Opravilo.id}} moraš opraviti do današnjega dne!</p>
+							{%endif%}
+						<li><a href="/urediOpravilo/{{Opravilo.id}}/"><b>{{Opravilo.ime}}</b><br>
 						<p><b>Dokončati do: </b> {{Opravilo.dueDate}} <b>Prioriteta: </b> {{Opravilo.prioriteta}} <b>Področje: </b> {{Opravilo.podrocje}} <b>Zapiski: </b> {{Opravilo.zapiski}} 
 						<p></a></li>
 						{%endfor%}
@@ -60,7 +65,7 @@
 				{%if vsa_opravila%}
 					{%for Opravilo in vsa_opravila%}
 						<br><h4><b>{{Opravilo.dueDate}}</b></h4>
-						<li><a href="/toDo/{{Opravilo.id}}"><b>{{Opravilo.ime}}</b><br>
+						<li><a href="/urediOpravilo/{{Opravilo.id}}/"><b>{{Opravilo.ime}}</b><br>
 						<p><b>Prioriteta: </b> {{Opravilo.prioriteta}} <b>Področje: </b> {{Opravilo.podrocje}} <b>Zapiski: </b> {{Opravilo.zapiski}} 
 						<p></a></li>
 						----------------------------------------------------------------------------
@@ -76,7 +81,7 @@
                 <br><h4><b>Najbolj pomembno</b></h4>
                     {%for Opravilo in vsa_opravila%}
 						{%if Opravilo.prioriteta == '3'%}
-						<li><a href="/toDo/{{Opravilo.id}}"><b>{{Opravilo.ime}}</b><br>
+						<li><a href="/urediOpravilo/{{Opravilo.id}}/"><b>{{Opravilo.ime}}</b><br>
 						<p><b>Dokončati do: </b>{{Opravilo.dueDate}} <b>Področje: </b> {{Opravilo.podrocje}} <b>Zapiski:</b> {{Opravilo.zapiski}}</p></a></li>
 						{%endif%}
 					{%endfor%}
@@ -84,7 +89,7 @@
                 <br><h4><b>Pomembno</b></h4>
                     {%for Opravilo in vsa_opravila%}
 						{%if Opravilo.prioriteta == '2'%}
-						<li><a href="/toDo/{{Opravilo.id}}"><b>{{Opravilo.ime}}</b><br>
+						<li><a href="/urediOpravilo/{{Opravilo.id}}/"><b>{{Opravilo.ime}}</b><br>
 						<p><b>Dokončati do: </b>{{Opravilo.dueDate}} <b>Področje: </b> {{Opravilo.podrocje}} <b>Zapiski:</b> {{Opravilo.zapiski}}</p></a></li>
 						{%endif%}
 					{%endfor%}
@@ -92,7 +97,7 @@
                 <br><h4><b>Najmanj pomembno</b></h4>
                     {%for Opravilo in vsa_opravila%}
 						{%if Opravilo.prioriteta == '1'%}
-						<li><a href="/toDo/{{Opravilo.id}}"><b>{{Opravilo.ime}}</b><br>
+						<li><a href="/urediOpravilo/{{Opravilo.id}}/"><b>{{Opravilo.ime}}</b><br>
 						<p><b>Dokončati do: </b>{{Opravilo.dueDate}} <b>Področje: </b> {{Opravilo.podrocje}} <b>Zapiski:</b> {{Opravilo.zapiski}}</p></a></li>
 						{%endif%}
 					{%endfor%}
@@ -108,7 +113,7 @@
                 <br><h4><b>Šola</b></h4>
 					{%for Opravilo in vsa_opravila%}
 						{%if Opravilo.podrocje == '1'%}
-						<li><a href="/toDo/{{Opravilo.id}}"><b>{{Opravilo.ime}}</b><br>
+						<li><a href="/urediOpravilo/{{Opravilo.id}}/"><b>{{Opravilo.ime}}</b><br>
 						<p><b>Dokončati do: </b>{{Opravilo.dueDate}} <b>Prioriteta: </b> {{Opravilo.prioriteta}} <b>Zapiski:</b> {{Opravilo.zapiski}}<p></a></li>
 						{%endif%}
 					{%endfor%}
@@ -116,7 +121,7 @@
 				<br><h4><b>Delo</b></h4>
 					{%for Opravilo in vsa_opravila%}
 						{%if Opravilo.podrocje == '2'%}
-						<li><a href="/toDo/{{Opravilo.id}}"><b>{{Opravilo.ime}}</b><br>
+						<li><a href="/urediOpravilo/{{Opravilo.id}}/"><b>{{Opravilo.ime}}</b><br>
 						<p><b>Dokončati do: </b>{{Opravilo.dueDate}} <b>Prioriteta: </b> {{Opravilo.prioriteta}} <b>Zapiski:</b> {{Opravilo.zapiski}}<p></a></li>
 						{%endif%}
 					{%endfor%}
@@ -124,7 +129,7 @@
 				<br><h4><b>Dom</b></h4>
 					{%for Opravilo in vsa_opravila%}
 						{%if Opravilo.podrocje == '3'%}
-						<li><a href="/toDo/{{Opravilo.id}}"><b>{{Opravilo.ime}}</b><br>
+						<li><a href="/urediOpravilo/{{Opravilo.id}}/"><b>{{Opravilo.ime}}</b><br>
 						<p><b>Dokončati do: </b>{{Opravilo.dueDate}} <b>Prioriteta: </b> {{Opravilo.prioriteta}} <b>Zapiski:</b> {{Opravilo.zapiski}}<p></a></li>
 						{%endif%}
 					{%endfor%}
@@ -132,7 +137,7 @@
 				<br><h4><b>Nakupovanje</b></h4>
 					{%for Opravilo in vsa_opravila%}
 						{%if Opravilo.podrocje == '4'%}
-						<li><a href="/toDo/{{Opravilo.id}}"><b>{{Opravilo.ime}}</b><br>
+						<li><a href="/urediOpravilo/{{Opravilo.id}}/"><b>{{Opravilo.ime}}</b><br>
 						<p><b>Dokončati do: </b>{{Opravilo.dueDate}} <b>Prioriteta: </b> {{Opravilo.prioriteta}} <b>Zapiski:</b> {{Opravilo.zapiski}}<p></a></li>
 						{%endif%}
 					{%endfor%}
@@ -140,7 +145,7 @@
 				<br><h4><b>Prosti čas</b></h4>
 					{%for Opravilo in vsa_opravila%}
 						{%if Opravilo.podrocje == '5'%}
-						<li><a href="/toDo/{{Opravilo.id}}"><b>{{Opravilo.ime}}</b><br>
+						<li><a href="/urediOpravilo/{{Opravilo.id}}/"><b>{{Opravilo.ime}}</b><br>
 						<p><b>Dokončati do: </b>{{Opravilo.dueDate}} <b>Prioriteta: </b> {{Opravilo.prioriteta}} <b>Zapiski:</b> {{Opravilo.zapiski}}<p></a></li>
 						{%endif%}
 					{%endfor%}
@@ -148,7 +153,7 @@
 				<br><h4><b>Ostalo</b></h4>
 					{%for Opravilo in vsa_opravila%}
 						{%if Opravilo.podrocje == '6'%}
-						<li><a href="/toDo/{{Opravilo.id}}"><b>{{Opravilo.ime}}</b><br>
+						<li><a href="/urediOpravilo/{{Opravilo.id}}/"><b>{{Opravilo.ime}}</b><br>
 						<p><b>Dokončati do: </b>{{Opravilo.dueDate}} <b>Prioriteta: </b> {{Opravilo.prioriteta}} <b>Zapiski:</b> {{Opravilo.zapiski}}<p></a></li>
 						{%endif%}
 					{%endfor%}
@@ -158,7 +163,7 @@
 
 		<div id="footer">
 			<p>
-				Made by <a href="/" target="_blank">[Lea]</a>
+				Made by [Lea]</a>
 			</p>
 		</div>
 	</div>
