@@ -27,9 +27,11 @@
 
         <div class="containerReg">
             <div id="Registracija">
-                <h2>Registriraj se:</h2>{% csrf_token %}
+                <h2>Registriraj se:</h2>
+				<form method='POST' action="{% url 'registracija'%}">{% csrf_token %}
 					{{form.as_p}}
 					<input type='submit' value='Registracija'/>
+				</form>
             </div>
 				
         </div>

@@ -33,7 +33,7 @@
                 <ul>
                     <li><a href="{% url 'dodaj_opravilo'%}">Dodaj opravilo</a></li>
                     <li><a href="{% url 'preglej_opravila'%}">Preglej opravila</a></li>
-                    <li><a href="{% url 'preglej_opravila'%}">Opravljena opravila</a></li>
+                    <li><a href="{% url 'opravljena_opravila'%}">Opravljena opravila</a></li>
                 </ul>
             </div>
 			
@@ -45,7 +45,7 @@
 					<ul>
 						{%for Opravilo in vsa_opravila%}
 							{%if Opravilo.opravljen == True %}
-						<li><b>{{Opravilo.ime}}</b><br>
+						<li><a><b>{{Opravilo.ime}}</b></a><br>
 						<p><b>Dokončati do: </b> {{Opravilo.dueDate}} <b>Prioriteta: </b> {{Opravilo.prioriteta}} <b>Področje: </b> {{Opravilo.podrocje}} <b>Zapiski: </b> {{Opravilo.zapiski}} 
 						<p></li>
 							{%endif%}
@@ -54,6 +54,7 @@
 					{%else%}
 						<h3>V seznamu ni opravil.</h3>
 					{%endif%}
+
 				</form>
 			</div>	
 		</div>

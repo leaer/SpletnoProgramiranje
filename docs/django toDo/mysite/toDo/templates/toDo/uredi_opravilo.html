@@ -34,8 +34,17 @@
 				<h2>Uredi opravilo:</h2>
 				<form method='POST' action="{% url 'uredi_opravilo' id%}" >{% csrf_token %}
 					{{form.as_p}}
+
 					<input type='submit' value='Posodobi'/>
+					
+					<a href="{% url 'brisi_opravilo' id%}">
+						<input type="button" value="Briši opravilo" />
+					</a>
 				</form>
+				
+					
+				
+				
             </div>
         </div>
 

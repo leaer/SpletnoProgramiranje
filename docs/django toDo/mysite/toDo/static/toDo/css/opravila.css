@@ -184,7 +184,7 @@ body{
 	
 }
 
-input[type="submit"] {
+input[type="submit"]{
     margin-top:10px;
     background-color: #990000;
     color: white;
