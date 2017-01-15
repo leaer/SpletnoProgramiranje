@@ -2,6 +2,8 @@ from django.db import models
 import datetime
 from django.contrib.auth.models import User
 
+#MODELS
+
 PRIORITETA = (
 	('1','Najmanj pomembno'),
 	('2','Pomembno'),
@@ -31,6 +33,7 @@ class Uporabnik(models.Model):
 		return self.uporabniskoIme        
 
 class Opravilo(models.Model):
+
 	uporabnik = models.ForeignKey(User, on_delete=models.CASCADE)
 	ime = models.CharField(max_length=200)
 	dueDate = models.DateTimeField(default=datetime.datetime.now)
