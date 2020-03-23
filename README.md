@@ -16,7 +16,6 @@ Stran sem poskusila odpreti v večih brskalnikih. V Firefoxu sem opazila, da "da
 
 Ponosna sem predvsem na izgled strani opravila oz. dodaj opravilo, saj mi deluje pregledna in urejena. Veliko truda sem vložila tudi v izgled gumbov, kako se spremeni barva, doda senca, ko gremo z miško preko njih. Veliko sem se ukvarjala tudi z animiranjem posnetka na naslovni strani. Veliko dela sem vložila tudi v stran koledar, saj sem za izdelavo tabele z dnevnim in mesečnim koledarjem vložila veliko časa (ko gremo z miško skozi dneve, se polja drugače obarvajo...). Sama sem zrisala tudi banner v glavi strani.
 
-Zaenkrat je moja stran sestavljena zelo statično, za boljšo uporabniško izkušnjo bi morda morala spisati js kodo, tako pa je moja stran zgrajena zgolj iz html in css kode. Problem mi je predstavljal izris grafa na html5 canvas, katerega mi je uspelo izrisati, vendar pa js kode nisem uspela usposobiti.
 
 Spletno stran sem postavila tudi na lea.erzar.si (preko programa FileZilla).
 
